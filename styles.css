@@ -2,18 +2,106 @@
     margin:0;
     padding:0;
     font-family: "Roboto";
+
 }
 
 #page{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 #sidebar{
+    background-color: #5b21b6;
+    color:white;
+    font-weight: bold;
     grid-row: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+    padding:1em;
 }
 
 #sidebar a{
     text-decoration: none;
-    color:black;
+    color:white;
+}
+
+#sidebar ul{
+    list-style: none;
+}
+
+#sidebar li{
+    padding:4px;
+}
+
+#dashboardHeader{
+    padding:1em;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.192);
+}
+
+#inPageWrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #ddd6fe;
+    margin-top: 1em;
+    padding:1em;
+    gap:1em;
+}
+
+#projectGrid{
+    
+}
+
+#projectCardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:2em;
+}
+
+#projectCard{
+    border-left:5px solid #a78bfa;
+    padding:1em;
+    height:200px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.185);
+}
+
+#trendingTab{
+   grid-column: 2;
+}
+
+#rightContainer{
+   display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+}
+#announcementContainer{
+    height: 100%;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1em;
+    margin-bottom:2em;
+}
+
+.announcements{
+    border-bottom: 1px solid black;
+    padding: 1em 0;
+}
+
+#trendingBox{    
+    background-color: white;
+    border-radius: 1em;
+}
+
+#profile{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    padding:1.1em;
+}
+
+.avatar img{
+    border-radius: 100px;
 }
