@@ -1,8 +1,7 @@
 :root{
-    --bg-primary:#44318d;
-    --bg-secondary:#8265a7;
-    --bg-third:#2a1b3d;
-    --bg-fourth:#a4b3b6;
+    --bg-primary:#282a35;
+    --bg-secondary:black;
+    --bg-third:#04aa6d;
 }
 *{
     margin:0;
@@ -14,7 +13,7 @@
     display: grid;
     grid-template: 0.3fr 4fr / 0.7fr 5fr;
     height: 100vh;
- 
+    overflow:visible;
 }
 
 #sidebar{
@@ -22,6 +21,13 @@
     color:white;
     font-weight: bold;
     grid-area: 1 / 1 / 5 / 1;
+}
+
+/* Make the Sidebar stick */
+#sidebarContent{
+    position:sticky;
+    align-self: start;
+    top:0;
     display: flex;
     flex-direction: column;
     gap:1.5em;
@@ -31,6 +37,12 @@
 #sidebar a{
     text-decoration: none;
     color:white;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar a img{
+    padding: 0 6px;
 }
 
 #sidebar ul{
@@ -38,6 +50,7 @@
 }
 
 #sidebar li{
+    
     padding:4px;
 }
 
@@ -56,8 +69,33 @@
 
 #headerRowOne{
     grid-area: 1 / 1 / 1 / 1;
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 4fr 1fr;
     justify-content: space-between;
+    align-items: center;
+}
+
+#searchbar{
+    padding-left: 2em;
+}
+
+#avatar{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+ #avatar img{
+  border-radius: 2em;
+  border:2px solid var(--bg-third)
+}
+
+#searchbar input{
+    outline: none;
+    border: 1px solid var(--bg-primary);
+    border-radius: 16px;
+    width:80%;
+    padding:4px;
 }
 
 #headerRowTwo{
@@ -67,8 +105,24 @@
     align-items: center;
 }
 
+#userBox{
+    padding-left: 0.5em 4em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 #userData{
+  padding-left: 1em;
   
+}
+
+#buttonArray{
+    display: flex;
+    flex-flow: row wrap;
+    gap:8px;
+    padding:0.3em;
 }
 
 .btn{
@@ -91,6 +145,17 @@
     gap:1em;
 }
 
+@media only screen and (max-width: 870px){
+    #inPageWrapper{
+        border-radius: 4px;
+        display: grid;
+        grid-template: 1fr / 2fr;
+        background-color: var(--bg-fourth);
+        padding:1em;
+        gap:1em;
+    }
+}
+
 #projectCardContainer{
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr 1fr;
@@ -98,7 +163,7 @@
 }
 
 #projectCard{
-    border-left:5px solid #e53f71;
+    border-left:5px solid var(--bg-third);
     background-color: var(--bg-primary);
     color:white;
     font-size: 1em;
@@ -119,7 +184,7 @@
 #announcementContainer{
     font-size: 12px;
     height: 100%;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     color:white;
     border-radius: 1em;
     display: flex;
@@ -134,7 +199,7 @@
 }
 
 #trendingBox{    
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     color:white;
     font-size: 12px;
     border-radius: 1em;
@@ -154,3 +219,8 @@
 .avatar img{
     border-radius: 100px;
 }
+
+.smallFont{
+    font-size: 1em!important;
+}
+
