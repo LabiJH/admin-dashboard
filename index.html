@@ -19,22 +19,24 @@
 <body>
     <div id="page">
         <div id="sidebar">
-            <h1>Dashboard</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messager</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
-            </ul>
+            <div id="sidebarContent">
+                <h1>Dashboard</h1>
+                <ul>
+                    <li><a href="#"><img src="/media/home.png" alt="">Home</a></li>
+                    <li><a href="#"><img src="/media/face-man-profile.png" alt="">Profile</a></li>
+                    <li><a href="#"><img src="/media/message.png" alt="">Messager</a></li>
+                    <li><a href="#"><img src="/media/history.png" alt="">History</a></li>
+                    <li><a href="#"><img src="/media/file-tree.png" alt="">Tasks</a></li>
+                    <li><a href="#"><img src="/media/apple-keyboard-command.png" alt="">Communities</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="/media/cog.png" alt="">Settings</a></li>
+                    <li><a href="#"><img src="/media/lifebuoy.png" alt="">Support</a></li>
+                    <li><a href="#"><img src="/media/folder-hidden.png" alt="">Privacy</a></li>
+                </ul>
+            </div>  
         </div>
-    <!-----------------HEADER AREA START------------------->
+        <!-----------------HEADER AREA START------------------->
         <div id="dashboardHeader">
             <div id="headerRowOne">
                 <div id="searchbar">
@@ -42,73 +44,76 @@
                 </div>
                 <div id="avatar">
                     <img src="https://unsplash.it/50/50" alt="">
-                    Labinot Jaha    
+                    Labinot Jaha
                 </div>
+                
             </div>
             <div id="headerRowTwo">
-                <div id="avatar">
-                    <img src="https://unsplash.it/50/50" alt="">
+                <div id="userBox">
+                    <div id="avatar">
+                        <img src="https://unsplash.it/50/50" alt="">
                     </div>
                     <div id="userData">
-                        <p>Hi there</p> 
-                        Labinot Jaha 
-                    </div>
-                    <div id="buttonArray">
-                        <input type="button" value="New" class="btn">   
-                        <input type="button" value="Upload" class="btn">  
-                        <input type="button" value="Share" class="btn"> 
+                        <p class="smallFont">Hi there,</p>
+                        <h1>Labinot Jaha</h1>
                     </div>
                 </div>
+                <div id="buttonArray">
+                    <input type="button" value="New" class="btn">
+                    <input type="button" value="Upload" class="btn">
+                    <input type="button" value="Share" class="btn">
+                </div>
             </div>
-            <!-----------------HEADER AREA END------------------->
+        </div>
+        <!-----------------HEADER AREA END------------------->
 
-            <!-----------------IN PAGE CONTAINER AREA START------------------->
+        <!-----------------IN PAGE CONTAINER AREA START------------------->
         <div id="inPageWrapper">
             <div id="projectCardContainer">
                 <div id="projectCard">
-                    <h6>Super Cool Project!</h6>
+                    <h3>Super Cool Project!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem quasi repudiandae
                         quae ex, consequatur error! Sed tempora ducimus temporibus quasi vero veritatis
                         reprehenderit quaerat, eligendi iusto cupiditate iste alias.</p>
                 </div>
 
                 <div id="projectCard">
-                    <h6>Super Cool Project!</h6>
+                    <h3>Super Cool Project!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem quasi repudiandae
                         quae ex, consequatur error! Sed tempora ducimus temporibus quasi vero veritatis
                         reprehenderit quaerat, eligendi iusto cupiditate iste alias.</p>
                 </div>
 
                 <div id="projectCard">
-                    <h6>Super Cool Project!</h6>
+                    <h3>Super Cool Project!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem quasi repudiandae
                         quae ex, consequatur error! Sed tempora ducimus temporibus quasi vero veritatis
                         reprehenderit quaerat, eligendi iusto cupiditate iste alias.</p>
                 </div>
 
                 <div id="projectCard">
-                    <h6>Super Cool Project!</h6>
+                    <h3>Super Cool Project!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem quasi repudiandae
                         quae ex, consequatur error! Sed tempora ducimus temporibus quasi vero veritatis
                         reprehenderit quaerat, eligendi iusto cupiditate iste alias.</p>
                 </div>
 
                 <div id="projectCard">
-                    <h6>Super Cool Project!</h6>
+                    <h3>Super Cool Project!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem quasi repudiandae
                         quae ex, consequatur error! Sed tempora ducimus temporibus quasi vero veritatis
                         reprehenderit quaerat, eligendi iusto cupiditate iste alias.</p>
                 </div>
 
                 <div id="projectCard">
-                    <h6>Super Cool Project!</h6>
+                    <h3>Super Cool Project!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem autem quasi repudiandae
                         quae ex, consequatur error! Sed tempora ducimus temporibus quasi vero veritatis
                         reprehenderit quaerat, eligendi iusto cupiditate iste alias.</p>
                 </div>
             </div>
             <div id="rightContainer">
-               
+
                 <div id="announcementContainer">
                     <h1>Announcements</h1>
                     <div class="announcements">
@@ -132,7 +137,7 @@
                 </div>
 
                 <div id="trendingTab">
-                    
+
                     <div id="trendingBox">
                         <h1>Trending</h1>
                         <div id="profile">
