@@ -70,22 +70,44 @@
 #headerRowOne{
     grid-area: 1 / 1 / 1 / 1;
     display: grid;
-    grid-template: 1fr / 4fr 1fr;
+    grid-template: 1fr / 2fr 1fr;
     justify-content: space-between;
     align-items: center;
 }
 
+@media (max-width:700px){
+    #headerRowOne{
+    grid-area: 1 / 1 / 1 / 1;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+/* Let Profile Image disappear on mobile. */
+
+    #avatar{
+        display: none!important;
+    }
+}
+
 #searchbar{
+    display: flex;
+    align-items: center;
+    gap:1em;
     padding-left: 2em;
 }
 
 #avatar{
     display: flex;
     align-items: center;
+    justify-content: end;
     gap:8px;
+    font-style: italic;
 }
 
  #avatar img{
+    position: relative;
   border-radius: 2em;
   border:2px solid var(--bg-third)
 }
@@ -169,6 +191,16 @@
     font-size: 1em;
     padding:1em;
     box-shadow: 2px 2px 3px #e53f7173;
+    display: flex;
+    gap:1em;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.projectIcons{
+    display: flex;
+    gap:1em;
+    align-self: flex-end;
 }
 
 #trendingTab{
@@ -194,10 +226,6 @@
     grid-area: 1 / 1 / 1 / 1;
 }
 
-.announcements{
-    
-}
-
 #trendingBox{    
     background-color: var(--bg-primary);
     color:white;
@@ -212,7 +240,7 @@
 #profile{
     display: flex;
     align-items: center;
-    gap:4px;
+    gap:8px;
     padding:0.5em;
 }
 
